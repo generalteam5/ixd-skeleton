@@ -34,9 +34,26 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', function(req, res){
+  res.render('index');
+});
 // Example route
 // app.get('/users', user.list);
+app.get('/overview', function(req, res){
+    res.render('overview');
+});
+
+app.get('/chats', function(req, res){
+  res.render('chats');
+});
+
+app.get('/groups', function(req, res){
+  res.render('groups');
+});
+
+app.get('/profiles', function(req, res){
+  res.render('profiles');
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
