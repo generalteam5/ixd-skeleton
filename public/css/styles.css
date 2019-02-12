@@ -75,3 +75,10 @@ table img {
         width: 70%;
         height: 70%;
 }
+
+tr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px 0 10px;
+}
