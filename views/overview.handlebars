@@ -1,99 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Overview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+
+    <title>Mood</title>
 </head>
-<style>
-   .navbar{
-        display:flex;
-        position:absolute;
-        bottom:0;
-    }
-    body{
-        background-color: cornflowerblue;
-    }
-    .home{
-        height:100px;
-        width:100px;
-        padding:20px;
-        margin:20px;
-        border-width: 10%
-    }
-
-    li{
-        display: block;
-        background-color: grey;
-    }
-
-    li:hover {
-        background-color:hotpink;
-    }
-
-    li:valid {
-        background-color: hotpink;
-    }
-
-    h1{
-        text-align: center;
-        color: white;
-        font-size: 100px;
-        font-family: 'Courier New', Courier, monospace
-    }
-
-    h2{
-        text-align: center;
-        font-size: 50px;
-        color:white;
-    }
-
-    .second{
-        position: relative;
-        top:700px;
-    }
-    
-    .ftable{
-        position: absolute;
-        bottom: 250px;
-        font-size:50px;
-        color: white;
-        padding: 30px;
-    }
-
-    .stable{
-        position: absolute;
-        top: 400px;
-        font-size:50px;
-        color: white;
-        padding: 30px;
-    }
-
-    img{
-        align-content: center;
-        height:100%;
-        width: 100%;
-    }
-</style>
 
 <body>
-    
-    <div><h1>OVERVIEWS</h1></div><hr style="size:50px"></hr>
 
-    <div>       
-        <ul class="navbar">
-                <li><a href="/"><img src="../images/home-icon-silhouette.png" class="home"></a></li>
-                <li><a href="profiles"><img src="../images/Group 8.png" class="home"></a></li>
-                <li><a href="overview"><img src="../images/Path 3.png" class="home"></a></li>
-                <li><a href="chats"><img src="../images/Group 6.png" class="home"></a></li>
-                <li><a href="groups"><img src="../images/Group 2.png" class ="home"></a></li>    
-        </ul>    
-    </div>  
+     <!--Begin of Header-->
+    <header>
+        <nav>        
+            <ul class="navbar">
+                <li><a href="/"><img src="../images/home-icon-silhouette.png"></a></li>
+                <li><a href="profiles"><img src="../images/Group 8.png"></a></li>
+                <li><a class="active" href="overview"><img src="../images/Path 3.png"></a></li>
+                <li><a href="chats"><img src="../images/Group 6.png"></a></li>
+                <li><a href="groups"><img src="../images/Group 2.png"></a></li>    
+            </ul> 
+        </nav>   
+        <!--Nav Bar-->
+    </header>  
+    <!-- End of Header-->
 
-    <div><img src="../images/graph .png" class="graph"></div>
 
-    <div><h2>Time x Mood</h2></div>
+    <div>
+        <img class="overviewGraph" src="../images/graph .png">
+    </div>
 
-    <div style="align-content: center">
-        <table class="ftable">
+    <div>
+        <h2 style="text-align: center">Time x Mood</h2>
+    </div>
+
+    <div>
+        <table class="adjustTableOverview">
                 <tr><td><u>Good Vibes</u></td></tr>
                 <tr><td>Dance - Gym - Lofi - Sun - Running</td></tr>
                 <tr><td><u>Bad Vibes</u></td></tr>
