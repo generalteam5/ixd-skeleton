@@ -1,108 +1,90 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Main_Screen</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+
+    <title>Mood</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-<style>
-    .navbar{
-        display:flex;
-        position:absolute;
-        bottom:0;
-    }
-    body{
-        background-color: cornflowerblue;
-    }
-    .home{
-        height:100px;
-        width:100px;
-        padding:20px;
-        margin:20px;
-        border-width: 10%
-    }
-
-    li{
-        display: block;
-        background-color: grey;
-    }
-
-    li:hover {
-        background-color:hotpink;
-    }
-
-    li:active {
-        background-color: hotpink;
-    }
-
-    h1{
-        text-align: center;
-        color: white;
-        font-size: 100px;
-        font-family: 'Courier New', Courier, monospace
-    }
-
-    h2{
-        text-align: center;
-        font-size: 50px;
-        color:white;
-    }
-
-    .second{
-        position: relative;
-        top:700px;
-    }
-    
-    .ftable{
-        position: absolute;
-        bottom: 250px;
-        font-size:50px;
-        color: white;
-        padding: 30px;
-    }
-
-    .stable{
-        position: absolute;
-        top: 400px;
-        font-size:50px;
-        color: white;
-        padding: 30px;
-    }
-
-</style>
 
 <body>
 
-    <div><h1>HOME</h1></div><hr style="size:50px"></hr>
-    <div><h2><u>At A Glance</u></h2></div>
-    <div><h2 class="second"><u>Recent Friend Posts</u></h2></div> 
-            
-    <div>       
-        <ul class="navbar">
-                <li><a href="/"><img src="../images/home-icon-silhouette.png" class="home"></a></li>
-                <li><a href="profiles"><img src="../images/Group 8.png" class="home"></a></li>
-                <li><a href="overview"><img src="../images/Path 3.png" class="home"></a></li>
-                <li><a href="chats"><img src="../images/Group 6.png" class="home"></a></li>
-                <li><a href="groups"><img src="../images/Group 2.png" class ="home"></a></li>    
-        </ul>    
-    </div>  
+    <!--Begin of Header-->
+    <header>
+        <nav>        
+            <ul class="navbar">
+                <li><a class="active" href="/"><img src="../images/home-icon-silhouette.png"></a></li>
+                <li><a href="profiles"><img src="../images/Group 8.png"></a></li>
+                <li><a href="overview"><img src="../images/Path 3.png"></a></li>
+                <li><a href="chats"><img src="../images/Group 6.png"></a></li>
+                <li><a href="groups"><img src="../images/Group 2.png"></a></li>    
+            </ul> 
+        </nav>   
+        <!--Nav Bar-->
+    </header>  
+    <!-- End of Header-->
 
-    <div>
-        <table class="ftable">
-            <tr>
-                <td width=15%><img src="../images/Group.png" style="width: 100px"></td>
-                <td width=85%>Winson  2 hours ago<br>Mood:Excited<br>I just went on to the gym after my COGS 120 and it felt great!</td>
-            </tr>
-        </table>
-    </div>
+    <section class="at_a_glance">
+        <h2 class="title">At A Glance</h2>
+        <!--table-->
+        <table>
+        <tr>
+            <td>
+                <img src="../images/Group.png">
+            </td>
+            <td>
+                <p>"Today has been going really well so far, I went on a run..."</p>
+            </td>
 
-    <div>
-        <table class="stable">
-            <tr><td width=15%><img src="../images/Group.png" style="width: 100px"></td><td width=85% height=100>"Today has been going really well so far, I went on a run..."</td></tr>
-            <br><br><br>
-            <tr><td width=20% style="padding:8px"><img src="../images/Combined Shape.png" style="width: 90px"></td><td width=80%>Good Vibe of the Day: Gym</td></tr>
+        </tr>
+        <!--post 1-->
+
+        <tr>
+            <td>
+                <img src="../images/Combined Shape.png">
+            </td>
+            <td>
+                <p>Good Vibe of the Day: <u>Gym</u></p>
+            </td>
+
+        </tr>
         </table>
-    </div>
+        <!--post 2-->
+    </section>
+
+    <!--End of At A Glance-->
+
+        <section class="recent_friend_post">
+        <h2 class="title">Recent Friend Post</h2>
+        <!--table-->
+        <table>
+        <tr>
+            <td>
+                <img src="../images/Group.png">
+            </td>
+            <td>
+                <p>Winson      2h</p>
+                <p>Mood: <i>Excited</i></p>
+                <p>I just went to the gym after my Cogs 120 class and it felt great!</p>
+            </td>
+
+        </tr>
+        <!--post 1-->
+
+        <tr>
+            <td>
+                <img src="../images/Group.png">
+            </td>
+            <td>
+                <p>Huy      10m</p>
+                <p>Mood: <i>Neutral</i></p>
+                <p>Nothing exciting happened today. Just another normal day.</p>
+            </td>
+        </tr>
+        <!--post 2-->
+    </section>
+
+    <!--End of Recent Friend Posts--> 
             
 </body>
 </html>

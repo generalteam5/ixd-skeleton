@@ -1,0 +1,44 @@
+*, :after, :before{
+        margin: 0;
+        padding: 0;
+        border: 0;
+}
+
+body{
+        background-color: cornflowerblue;
+        margin: 0;
+}
+
+/*--idk what this is doing*/
+ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: grey;
+}
+/*--idk what this is doing*/
+
+.navbar {
+        width: 100%;
+        background-color: grey;
+        overflow: auto;
+}
+
+.navbar a {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+      }
+      
+.navbar a:hover {
+        background-color:hotpink;
+}
+      
+.active {
+        background-color: #4CAF50;
+}
