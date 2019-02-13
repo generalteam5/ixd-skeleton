@@ -55,6 +55,10 @@ app.get('/profiles', function(req, res){
   res.render('profiles');
 });
 
+app.get('/login', function(req, res){
+  res.render('login');
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
