@@ -1,0 +1,56 @@
+*, :after, :before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: cornflowerblue;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    padding: 120px 0 170px 0;
+    height: 35%;
+    width: 35%
+}
+
+.bar {
+    padding: 100px 0 0 0;
+    width: 70%;
+    height: 30px;
+}
+
+.bar2 {
+    padding: 10px 0 0 0;
+    width: 70%;
+    height: 30px;
+}
+
+.button {
+    padding: 30px 0 0 0;
+}
+
+
+.gobutton {
+    padding: 20px 0 0 0;
+    height: 70px;
+    width: 140px;
+}
+
+input[type=text], input[type=password] {
+  width: 70%;
+  height: 20px;
+  padding: 20px 20px;
+  margin: 20px 0 0 15%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius:15px;
+}
