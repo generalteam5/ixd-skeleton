@@ -59,6 +59,10 @@ app.get('/home', function(req, res){
   res.render('home');
 });
 
+app.get('/mslider', function(req, res){
+  res.render('mslider');
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
