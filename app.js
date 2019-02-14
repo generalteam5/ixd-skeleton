@@ -55,8 +55,8 @@ app.get('/profiles', function(req, res){
   res.render('profiles');
 });
 
-app.get('/login', function(req, res){
-  res.render('login');
+app.get('/home', function(req, res){
+  res.render('home');
 });
 
 http.createServer(app).listen(app.get('port'), function(){
