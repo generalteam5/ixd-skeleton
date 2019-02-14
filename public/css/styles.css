@@ -55,8 +55,9 @@ ul{
 }
 
 table img {
-        padding: 0 20px 45px 10px;
+        padding: 0 20px 25px 10px;
 }
+
 
 .adjustTableOverview {
         display: block;
@@ -76,9 +77,9 @@ table img {
         height: 70%;
 }
 
-tr {
+table tr {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding: 0 10px 0 10px;
+        padding: 0 10px 20px 10px;
 }

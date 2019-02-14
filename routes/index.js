@@ -1,7 +1,13 @@
+var data = require('../data.json');
 
 /*
  * GET home page.
  */
-exports.view = function(req, res){
+exports.index = function(req, res){
   res.render('index');
 };
+
+exports.home = function(req, res){
+  res.render('home', data);
+}
+

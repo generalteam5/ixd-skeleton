@@ -1,0 +1,50 @@
+{
+	"friends": [
+		{
+			"name": "Huy",
+			"description": "Desu~~~~~~~~~~~~~~~~~~~~~",
+			"mood": "Neutral",
+			"time": "10m",
+			"img": "../images/Group.png"
+		},
+		{
+			"name": "Winson",
+			"description": "I just went to the gym after my Cogs 120 class and it felt great!",
+			"mood": "Excited",
+			"time": "2h",
+			"img": "../images/Group.png"
+		},
+		
+		{
+			"name": "Frankie",
+			"description": "VS code is awesome!",
+			"mood": "Ecstatic",
+			"time": "3h",
+			"img": "../images/Group.png"
+		},
+
+		{
+			"name": "Richard",
+			"description": "AMDDDDDDDDDDDDDDDDDDDDDDDDDDDD Stocks",
+			"mood": "Meh",
+			"time": "3h",
+			"img": "../images/Group.png"
+		},
+
+		{
+			"name": "Lucas",
+			"description": "Cryptoooooooooooooooooooo",
+			"mood": "Woo-hoo",
+			"time": "4h",
+			"img": "../images/Group.png"
+		},
+
+		{
+			"name": "Yusuf",
+			"description": "I like cats.",
+			"mood": "Meow",
+			"time": "8h",
+			"img": "../images/Group.png"
+		}
+	]
+}

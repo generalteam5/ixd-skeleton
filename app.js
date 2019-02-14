@@ -55,9 +55,7 @@ app.get('/profiles', function(req, res){
   res.render('profiles');
 });
 
-app.get('/home', function(req, res){
-  res.render('home');
-});
+app.get('/home', index.home);
 
 app.get('/mslider', function(req, res){
   res.render('mslider');

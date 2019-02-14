@@ -7,7 +7,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/json.css">
 
     <title>Mood</title>
 </head>
@@ -57,37 +57,30 @@
 
     <!--End of At A Glance-->
 
+    <!--recent friend post json table-->
     <section class="recent_friend_post">
-        <h2 class="title2">Recent Friend Post</h2>
+    <h2 class="title2">Recent Friend Post</h2>
         <!--table-->
-        <table>
+    <table>
+    <div>        
+    {{#each friends}}
+      <div class="json">
         <tr>
             <td>
-                <img src="../images/Group.png">
+                <img src={{img}}>
             </td>
             <td>
-                <p>Winson      2h<br>
-                Mood: <i>Excited</i><br>
-                I just went to the gym after my Cogs 120 class and it felt great!</p>
-            </td>
-
-        </tr>
-        <!--post 1-->
-
-        <tr>
-            <td>
-                <img src="../images/Group.png">
-            </td>
-            <td>
-                <p>Huy      10m<br>
-                Mood: <i>Neutral</i><br>
-                Nothing exciting happened today. Just another normal day.</p>
+                <p>{{name}}      {{time}}<br>
+                Mood: <i>{{mood}}</i><br>
+                {{description}}</p>
             </td>
         </tr>
-        <!--post 2-->
+      </div>
+    {{/each}}
+    </div>
+    </table>
     </section>
+    <!--End of json table-->
 
-    <!--End of Recent Friend Posts--> 
-            
 </body>
 </html>
