@@ -16,13 +16,30 @@
 <body>
 
     <header>
-        <h3>How are you feeling?</h3>
+        <h2>How are you feeling?</h2>
     </header>
 
     <div class="slidecontainer">
-        <input type="range" min="1" max="90" value="45" class="slider" id="myRange">
+        <input type="range" min="1" max="1000" value="492" class="slider" id="myRange">
+    <!--Range acting weird with button in different sized screens-->
+    <!--Check Pixels of asset slider-->
+    <!--works well enough for Pixel2 XL-->
     </div>
+    
+    <!--Have Winson make these a single asset-->
+    <div class="facecontainer">
+        <img class="sad" src="../images/A6 Assets/sad face.png">
+        <img class="happy" src="../images/A6 Assets/happy face.png">
+        <img class="neutral" src="../images/A6 Assets/neutral face.png">
+    </div>
+    <!--Have Winson make these a single asset-->
 
+    <section class="buttoncontainer">
+        <div class="buttonwrapper">
+            <a href="home"><img class="skip" src="../images/A6 Assets/skip.png"></a>
+            <a href="home"><img class="checkin" src="../images/A6 Assets/check in.png"></a>
+        </div>
+    </section>
             
 </body>
 </html>
