@@ -7,7 +7,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="stylesheet" type="text/css" href="../css/json.css">
 
     <title>Mood</title>
 </head>
@@ -33,22 +32,22 @@
         <h2 class="title1">At A Glance</h2>
         <!--table-->
         <table>
-        <tr>
+        <tr class="post">
             <td>
                 <img src="../images/Group.png">
             </td>
             <td>
-                <p>"Today has been going really well so far, I went on a run..."</p>
+                <p>"Today has been going really well so far, I went on a run!"</p>
             </td>
         </tr>
         <!--post 1-->
 
-        <tr>
+        <tr class="post">
             <td>
-                <img src="../images/Combined Shape.png">
+                <img src="../images/A6 Assets/expanded_size.png">
             </td>
             <td>
-                <p>Good Vibe of the Day: <u>Gym</u></p>
+                <p>Good Vibe of the Day: <b>Exercise</b></p>
             </td>
         </tr>
         </table>
@@ -64,8 +63,8 @@
     <table>
     <div>        
     {{#each friends}}
-      <div class="json">
-        <tr>
+      <div>
+        <tr class="post">
             <td>
                 <img src={{img}}>
             </td>

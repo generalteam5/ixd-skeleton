@@ -83,3 +83,11 @@ table tr {
         margin-right: auto;
         padding: 0 10px 20px 10px;
 }
+
+b{
+        color: rgb(0, 255, 115);
+}
+
+.post{
+        padding-top: 20px;
+}

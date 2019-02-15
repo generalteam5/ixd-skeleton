@@ -55,10 +55,15 @@ app.get('/profiles', function(req, res){
   res.render('profiles');
 });
 
+//for json rendering
 app.get('/home', index.home);
 
 app.get('/mslider', function(req, res){
   res.render('mslider');
+});
+
+app.get('/entry', function(req, res){
+  res.render('entry');
 });
 
 http.createServer(app).listen(app.get('port'), function(){
