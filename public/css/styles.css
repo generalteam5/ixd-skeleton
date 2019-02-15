@@ -6,7 +6,7 @@
 }
 
 body{
-        background-color: cornflowerblue;
+        background-color: whitesmoke; /*messing with colors*/
         margin: 0;
 }
 
@@ -22,15 +22,17 @@ ul{
 
 .navbar {
         width: 100%;
-        background-color: grey;
+        background-color: rgb(160, 160, 160);
         overflow: auto;
+        /*position: fixed; /*holds havbar in place*/
+        /*top: 0; /*keeps it at the top*/
 }
 
 .navbar a {
         float: left;
         width: 20%;
         text-align: center;
-        padding: 12px 0;
+        /*padding: 12px 0;*/
         transition: all 0.3s ease;
         color: white;
         font-size: 36px;
@@ -41,7 +43,7 @@ ul{
 }
       
 .active {
-        background-color: #4CAF50;
+        background-color: rgb(80, 180, 83);
 }
 
 .title1 {
@@ -85,7 +87,7 @@ table tr {
 }
 
 b{
-        color: rgb(0, 255, 115);
+        color: rgb(0, 238, 107);
 }
 
 .post{
