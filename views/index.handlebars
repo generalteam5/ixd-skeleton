@@ -9,9 +9,15 @@
     <link rel="stylesheet" type="text/css" href="../css/login.css">
 
     <title>Mood</title>
+
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
 </head>
 
 <body>
+
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=2751195091773035&autoLogAppEvents=1"></script>
 
     <header>
         <div>
@@ -34,8 +40,8 @@
         <a href="mslider"><img class="button" src="../images/A6 Assets/login button .png"></a>
     </section>
 
-    <section>
-        <a href="mslider"><img class="gobutton" src="../images/A6 Assets/google button.png"></a>
+    <section id="center">
+            <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
     </section>
     <!--End of login buttons-->
 
