@@ -18,12 +18,9 @@ function statusChangeCallback(response) {
     }
 } 
 
-/* When we make profile page. Add this in and modify
 
 function changeUser(response) {
   //Add code to change name and image
-  $('.facebookLogin').hide();
   $('#name').text(response.name);
   $('#photo').attr("src", response.picture.data.url);
 }
-*/
