@@ -17,6 +17,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/overview.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
@@ -49,7 +50,7 @@
     </div> --}}
 
 
-    <h4 class="middle">Feel free to click a point in time</h4>
+    {{!-- <h4 class="middle">Feel free to click a point in time</h4> --}}
 
     <!--Responsive graph for app-->
     <section>
@@ -82,20 +83,46 @@
     <!--End graph-->
     </section>
 
-
+    
 
     <div>
         <h2 style="text-align: center">Day x Mood Level</h2>
     </div>
 
-    <div>
+    
+    <br><h5 class="middle">Recent Topics and Mood</h5>
+
+    {{!-- <div>
         <table class="adjustTableOverview">
                 <tr><td><u>Good Vibes</u></td></tr>
                 <tr><td>Dance - Gym - Lofi - Sun - Running</td></tr>
                 <tr><td><u>Bad Vibes</u></td></tr>
                 <tr><td>Homework - Patricia - Boss - Diet</td></tr>
+    
+        </table>
+    </div> --}}
+
+    {{#each entries}}
+    <div>
+		<table>
+            <tr class='clickable-row' data-href='open'>
+                <div class="container">
+                <td class="marginRight"><p>Entry Topic: {{topic}}</p></td>
+                <td><p>Mood: {{mood}}</p></td>
+                {{!-- <td><p>{{entry}}</p></td> --}}
+                </div>
+            </tr>
         </table>
     </div>
+	{{/each}}
+
+    <script>
+        jQuery(document).ready(function($) {
+        $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+    });
+    </script>
 
 
            

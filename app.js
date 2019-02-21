@@ -39,9 +39,13 @@ app.get('/', function(req, res){
 });
 // Example route
 // app.get('/users', user.list);
-app.get('/overview', function(req, res){
-    res.render('overview');
-});
+
+
+// app.get('/overview', function(req, res){
+//     res.render('overview');
+// });
+
+app.get('/overview', index.overview);
 
 // app.get('/chats', function(req, res){
 //   res.render('chats');

@@ -16,3 +16,7 @@ exports.chats = function(req, res){
   res.render('chats', data2);
 }
 
+exports.overview = function(req, res){
+  res.render('overview', data2);
+}
+

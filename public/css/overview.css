@@ -1,0 +1,23 @@
+td {
+    padding-top: 30px;
+}
+
+tr {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.marginRight {
+    padding-right: 90px;
+    padding-left: 40px;
+}
+
+
+tr:hover {
+    background-color:lightblue;
+}
+
+.container {
+    width: 100%;
+}
