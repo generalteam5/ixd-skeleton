@@ -7,6 +7,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    
 
 
     <title>Mood</title>
@@ -30,9 +33,30 @@
     <!-- End of Header-->
 
 
-    <div>
+    {{!-- <div>
         <img class="overviewGraph" src="../images/graph .png">
-    </div>
+    </div> --}}
+
+    <!--Responsive graph for app-->
+    <div class="ct-chart ct-perfect-fourth"></div>
+    <script>
+        var data = {
+            // A labels array that can contain any sort of values
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+            // Our series array that contains series objects or in this case series data arrays
+            series: [
+                [5, 2, 4, 2, 0]
+            ]
+        };
+
+        // Create a new line chart object where as first parameter we pass in a selector
+        // that is resolving to our chart container element. The Second parameter
+        // is the actual data object.
+        var chart = new Chartist.Line('.ct-chart', data);
+
+    </script>
+    <!--End graph-->
+
 
     <div>
         <h2 style="text-align: center">Day x Mood Level</h2>
@@ -46,6 +70,8 @@
                 <tr><td>Homework - Patricia - Boss - Diet</td></tr>
         </table>
     </div>
+
+
            
 </body>
 </html>

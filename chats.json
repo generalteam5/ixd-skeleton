@@ -1,0 +1,53 @@
+{
+	"entries": [
+
+		{
+            "topic": "Life",
+            "mood": "Mysterious",
+            "entry": "The world is just one big round ball, but on that ball, there are so many wonders!"
+		},
+
+		{
+            "topic": "Sports",
+            "mood": "GAH",
+            "entry": "Darnnnnn, today I lost a game, if only I had tried harder or practiced even more."
+        },
+        
+        {
+            "topic": "Sports",
+            "mood": "GAH",
+            "entry": "Darnnnnn, today I lost a game, if only I had tried harder or practiced even more."
+        },
+
+        {
+            "topic": "Sports",
+            "mood": "GAH",
+            "entry": "Darnnnnn, today I lost a game, if only I had tried harder or practiced even more."
+        },
+
+        {
+            "topic": "Sports",
+            "mood": "GAH",
+            "entry": "Darnnnnn, today I lost a game, if only I had tried harder or practiced even more."
+        }, 
+        
+        {
+            "topic": "Sports",
+            "mood": "GAH",
+            "entry": "Darnnnnn, today I lost a game, if only I had tried harder or practiced even more."
+        },
+        
+        {
+            "topic": "Sports",
+            "mood": "GAH",
+            "entry": "Darnnnnn, today I lost a game, if only I had tried harder or practiced even more."
+        },        
+
+        {
+            "topic": "Hobby",
+            "mood": "Excited",
+            "entry": "I am so stoked for tomorrow's trip, I can go outside and take some pictures."
+        }
+	]
+
+}

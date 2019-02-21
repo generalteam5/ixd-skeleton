@@ -43,9 +43,11 @@ app.get('/overview', function(req, res){
     res.render('overview');
 });
 
-app.get('/chats', function(req, res){
-  res.render('chats');
-});
+// app.get('/chats', function(req, res){
+//   res.render('chats');
+// });
+//for json rendering
+app.get('/chats', index.chats);
 
 app.get('/groups', function(req, res){
   res.render('groups');

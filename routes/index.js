@@ -1,4 +1,5 @@
 var data = require('../data.json');
+var data2 = require('../chats.json');
 
 /*
  * GET home page.
@@ -9,5 +10,9 @@ exports.index = function(req, res){
 
 exports.home = function(req, res){
   res.render('home', data);
+}
+
+exports.chats = function(req, res){
+  res.render('chats', data2);
 }
 

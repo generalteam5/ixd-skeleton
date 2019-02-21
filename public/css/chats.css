@@ -1,0 +1,12 @@
+td {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px 5px 10px;
+}
+
+tr {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
