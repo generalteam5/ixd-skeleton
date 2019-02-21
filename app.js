@@ -64,6 +64,10 @@ app.get('/mslider', function(req, res){
   res.render('mslider');
 });
 
+app.get('/open', function(req, res){
+  res.render('openEntries');
+});
+
 app.get('/entry', function(req, res){
   res.render('entry');
 });

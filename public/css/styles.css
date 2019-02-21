@@ -24,7 +24,7 @@ ul{
         width: 100%;
         background-color: rgb(160, 160, 160);
         overflow: auto;
-        /*position: fixed; /*holds havbar in place*/
+        /*position: sticky; /*holds havbar in place*/
         /*top: 0; /*keeps it at the top*/
 }
 
@@ -90,6 +90,14 @@ b{
         color: rgb(0, 238, 107);
 }
 
-.post{
+.post {
         padding-top: 20px;
+}
+
+.graph {
+        padding-top: 30px;
+}
+
+.middle {
+        text-align: center;
 }

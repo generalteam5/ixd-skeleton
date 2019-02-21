@@ -16,7 +16,9 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/chats.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 
 
@@ -25,21 +27,20 @@
 
 <body>
 
-    <header>
-        <h2>Tell me about it.</h2>
-    </header>
+    {{!-- {{#each entries}}
+    <div>
+		<table>
+            <tr>
+                <td class="marginAbove"><p>Entry Topic: {{topic}}</p></td>
+                <td><p>Mood: {{mood}}</p></td>
+                <td><p>{{entry}}</p></td>
+            </tr>
+        </table>
+    </div>
+	{{/each}} --}}
 
-    <!-- potential change to form tag-->
-    <section>
-        <div>
-            <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
-        </div>
-    </section>
-
-    <section class="checkin">
-        <a href="home"><img src="../images/A6 Assets/check in.png"></a>
-    </section>
-
-
+    <h1>THIS IS SUPPOSEDLY A JOURNAL ENTRY PAGE</h1>
+    <a href="chats"><p>back to journal entries page</p></a>
+            
 </body>
 </html>
