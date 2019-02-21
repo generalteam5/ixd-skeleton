@@ -10,3 +10,10 @@ tr {
     border-bottom: 1px solid #ddd;
 }
 
+.marginAbove {
+    padding-top: 15px;
+}
+
+tr:hover {
+    background-color:lightblue;
+}
