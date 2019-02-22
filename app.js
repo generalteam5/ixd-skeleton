@@ -14,6 +14,8 @@ var index = require('./routes/index');
 
 var app = express();
 
+var fs = require('fs')
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -75,6 +77,16 @@ app.get('/open', function(req, res){
 app.get('/entry', function(req, res){
   res.render('entry');
 });
+
+app.post('/SendfbData', function(req, res){
+  console.log(req.body);
+  fs.writeFile("../facebook.json", JSON.stringify(req.body), function(err){
+    if(err){
+      return console.log(err);
+    }
+  })
+
+})
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

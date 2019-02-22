@@ -18,9 +18,11 @@ function statusChangeCallback(response) {
     }
 } 
 
-
 function changeUser(response) {
   //Add code to change name and image
-  $('#name').text(response.name);
-  $('#photo').attr("src", response.picture.data.url);
+  console.log(response);
+  $.ajax({type: "POST", url: "SendfbData", data: response, success: function(success){console.log(success)}});
+
+  //$('#name').text(response.name);
+  //$('#photo').attr("src", response.picture.data.url);
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134953827-1"></script>
     <script>
@@ -52,8 +54,9 @@
         <a href="mslider"><img class="button" src="../images/A6 Assets/login button .png"></a>
     </section>
 
+    <!-- facebook button-->
     <section id="center">
-            <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            <div scope="public_profile,email" class="fb-login-button" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()"></div>
     </section>
     <!--End of login buttons-->
 
