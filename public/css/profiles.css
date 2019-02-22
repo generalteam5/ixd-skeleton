@@ -11,6 +11,20 @@
 }
 
 .profile_name{
-    padding-top: 5px;
+    padding: 5px 0 0 0;
     text-align: center;
+}
+
+.QRCode{
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uniqueID{
+    padding: 0 0 0 0;
+    text-align: center;
+    font-size: small;
+    color: grey;
 }
