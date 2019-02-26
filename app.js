@@ -80,7 +80,7 @@ app.get('/entry', function(req, res){
 
 app.post('/SendfbData', function(req, res){
   console.log(req.body);
-  fs.writeFile("../facebook.json", JSON.stringify(req.body), function(err){
+  fs.writeFile("../ixd-skeleton/facebook.json", JSON.stringify(req.body), function(err){
     if(err){
       return console.log(err);
     }

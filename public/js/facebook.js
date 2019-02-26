@@ -23,6 +23,6 @@ function changeUser(response) {
   console.log(response);
   $.ajax({type: "POST", url: "SendfbData", data: response, success: function(success){console.log(success)}});
 
-  //$('#name').text(response.name);
-  //$('#photo').attr("src", response.picture.data.url);
+  window.location = 'mslider'; //redirect after log in
+
 }
