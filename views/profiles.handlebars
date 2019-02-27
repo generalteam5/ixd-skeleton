@@ -37,16 +37,17 @@
     <!-- End of Header-->
 
     <div id="facebookPhoto" class="profile_photo">
-    <img id="photo" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
+    <img id="photo" class='img-responsive' src={{picture.data.url}} />  <!--retrieves facebook url to display photo-->
     </div>
 
-    <h4 id="name" class="profile_name">Scott Klemmer</h4>
-    <h4 class="uniqueID">13017392</h4>
+    <h4 id="name" class="profile_name">{{name}}</h4>
+    <h4 class="uniqueID">{{id}}</h4>
     {{> facebook}}
 
     <div>
         <img class="QRCode" src="../images/QR Code.png">
     </div>
+
 
             
 </body>

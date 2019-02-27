@@ -59,9 +59,12 @@ app.get('/groups', function(req, res){
   res.render('groups');
 });
 
-app.get('/profiles', function(req, res){
-  res.render('profiles');
-});
+// app.get('/profiles', function(req, res){
+//   res.render('profiles');
+// });
+
+//for rendering dynamic json data on profiles page
+app.get('/profiles', index.profiles);
 
 //for json rendering
 app.get('/home', index.home);
