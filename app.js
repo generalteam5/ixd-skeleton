@@ -15,6 +15,7 @@ var index = require('./routes/index');
 var app = express();
 
 var fs = require('fs')
+var obj;
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -64,7 +65,14 @@ app.get('/groups', function(req, res){
 // });
 
 //for rendering dynamic json data on profiles page
-app.get('/profiles', index.profiles);
+// app.get('/profiles', index.profiles);
+app.get('/profiles', function(req, res){
+  fs.readFile('./public/facebook.json', function(err, data){
+      if (err) throw err;
+      obj = JSON.parse(data);
+      res.render('profiles', obj);
+  });
+});
 
 //for json rendering
 app.get('/home', index.home);
@@ -83,7 +91,7 @@ app.get('/entry', function(req, res){
 
 app.post('/SendfbData', function(req, res){
   console.log(req.body);
-  fs.writeFile("../ixd-skeleton/facebook.json", JSON.stringify(req.body), function(err){
+  fs.writeFile("./public/facebook.json", JSON.stringify(req.body), function(err){
     if(err){
       return console.log(err);
     }
