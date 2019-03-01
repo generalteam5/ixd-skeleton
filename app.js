@@ -32,6 +32,7 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -42,7 +43,6 @@ app.get('/', function(req, res){
 });
 // Example route
 // app.get('/users', user.list);
-
 
 // app.get('/overview', function(req, res){
 //     res.render('overview');
@@ -60,10 +60,6 @@ app.get('/groups', function(req, res){
   res.render('groups');
 });
 
-// app.get('/profiles', function(req, res){
-//   res.render('profiles');
-// });
-
 //for rendering dynamic json data on profiles page
 // app.get('/profiles', index.profiles);
 app.get('/profiles', function(req, res){
@@ -74,8 +70,8 @@ app.get('/profiles', function(req, res){
   });
 });
 
-//for json rendering
 app.get('/home', index.home);
+// app.get('/homeAlt', index.homeAlt);
 
 app.get('/mslider', function(req, res){
   res.render('mslider');
@@ -85,9 +81,12 @@ app.get('/open', function(req, res){
   res.render('openEntries');
 });
 
-app.get('/entry', function(req, res){
-  res.render('entry');
-});
+// app.get('/entry', function(req, res){
+//   res.render('entry');
+// });
+
+app.get('/entry', index.entry);
+app.get('/entryAlt', index.entryAlt);
 
 app.post('/SendfbData', function(req, res){
   console.log(req.body);
@@ -96,6 +95,25 @@ app.post('/SendfbData', function(req, res){
       return console.log(err);
     }
   })
+
+})
+
+app.post('/sendEntry', function(req, res){
+  console.log(req.body);
+  fs.readFile('./dataAlt.json', 'utf8', function readFileCallback(err, data){
+    if (err){
+        console.log(err);
+    } else {
+    obj = JSON.parse(data); //now it an object
+   // obj.table.push(req.body); //add some data
+    json = JSON.stringify(obj); //convert it back to json
+    fs.writeFile('./dataAlt.json', JSON.stringify(req.body), function(err){
+      if(err){
+        return console.log(err);
+      }
+    }); // write it back 
+    res.redirect('home');
+}});
 
 })
 

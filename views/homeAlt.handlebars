@@ -10,6 +10,7 @@
 
         gtag('config', 'UA-134953827-1');
     </script>
+    
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +18,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="stylesheet" type="text/css" href="../css/chats.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-
 
     <title>Mood</title>
 </head>
@@ -31,36 +28,46 @@
     <header>
         <nav>        
             <ul class="navbar">
-                <li><a href="home"><img src="https://img.icons8.com/material/24/000000/home-page.png"></a></li>
+                <li><a class="active" href="home"><img src="https://img.icons8.com/material/24/000000/home-page.png"></a></li>
                 <li><a href="profiles"><img src="https://img.icons8.com/material/24/000000/user.png"></a></li>
                 <li><a href="overview"><img src="https://img.icons8.com/material/24/000000/combo-chart.png"></a></li>
-                <li><a class="active" href="chats"><img src="https://img.icons8.com/material/24/000000/magazine.png"></a></li>
-                <li><a href="groups"><img src="https://img.icons8.com/material/24/000000/groups.png"></a></li> 
+                <li><a href="chats"><img src="https://img.icons8.com/material/24/000000/magazine.png"></a></li>
+                <li><a href="groups"><img src="https://img.icons8.com/material/24/000000/groups.png"></a></li>    
             </ul> 
         </nav>   
         <!--Nav Bar-->
     </header>  
     <!-- End of Header-->
+    <!-- Try just divs and left justify-->
+   
 
-    {{!-- {{#each entries}} --}}
-    <div>
-		<table>
-            <tr class='clickable-row' data-href='open'>
-                {{!-- <td class="marginAbove"><p>Entry Topic: {{topic}}</p></td> --}}
-                {{!-- <td><p>Mood: {{mood}}</p></td> --}}
-                <td><p>{{entry}}</p></td>
-            </tr>
-        </table>
+    <!--End of At A Glance-->
+
+    <!--recent friend post json table-->
+    <section class="recent_friend_post">
+    <h2 class="title2">Recent Friend Post</h2>
+        <!--table-->
+    <table>
+    <div>        
+    {{#each friends}}
+      <div>
+        <tr class="post">
+            <td>
+                <img src={{img}}>
+            </td>
+            <td>
+                <p>{{name}}      {{time}}<br>
+                Mood: <i>{{mood}}</i><br>
+                {{description}}</p>
+            </td>
+        </tr>
+      </div>
+    {{/each}}
     </div>
-	{{!-- {{/each}} --}}
+    </table>
+    </section>
+    <!--End of json table-->
 
-    <script>
-        jQuery(document).ready(function($) {
-        $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
-    });
-    });
-    </script>
-            
+
 </body>
 </html>

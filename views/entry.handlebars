@@ -29,17 +29,37 @@
         <h2>Tell me about it.</h2>
     </header>
 
-    <!-- potential change to form tag-->
-    <section>
-        <div>
+    <!-- Test block for if statement-->
+    {{!-- <section>
+        <form target="_self" action="sendEntry" method="POST">
             <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
-        </div>
-    </section>
+             <input type="text" name="tags" placeholder="Enter related tags here.">
+            <input class="checkin" onclick="window.location.href ='home';" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
+        </form>
+    </section> --}}
 
-    <section class="checkin">
+
+    {{!-- <section class="checkin">
         <a href="home"><img src="../images/A6 Assets/check in.png"></a>
-    </section>
+    </section> --}}
 
+
+    {{#if entryAlt}}
+     <section>
+        <form target="_self" action="sendEntry" method="POST">
+            <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
+            <input class="checkin" onclick="window.location.href ='home';" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
+        </form>
+    </section>       
+    {{else}}
+      <section>
+        <form target="_self" action="sendEntry" method="POST">
+            <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
+            <input type="text" name="tags" placeholder="Enter related tags here.">
+            <input class="checkin" onclick="window.location.href ='home';" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
+        </form>
+    </section>             
+    {{/if}}
 
 </body>
 </html>
