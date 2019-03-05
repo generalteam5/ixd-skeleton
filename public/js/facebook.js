@@ -26,3 +26,24 @@ function changeUser(response) {
   window.location = 'mslider'; //redirect after log in
 
 }
+
+
+//function to do google analytics logging
+function analytics() {
+  ga('create', 'UA-134953827-1', 'auto');
+  ga('send', 'event', 'TestA', 'Click', 'AB');
+  //window.location.href ='home'; //redirect to home
+}
+
+
+function analyticsB() {
+  ga('create', 'UA-134953827-1', 'auto');
+  ga('send', 'event', 'TestB', 'Click', 'AB');
+  //window.location.href ='home'; //redirect to home
+}
+
+function analyticsC() {
+  ga('create', 'UA-134953827-1', 'auto');
+  ga('send', 'event', 'TestC', 'Click', 'AB');
+  //window.location.href ='home'; //redirect to home
+}

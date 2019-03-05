@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {{!-- <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134953827-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,21 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-134953827-1');
-    </script>
+    </script> --}}
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-134953827-1', 'auto');
+ga('send', 'pageview');
+//ga("send", "event", 'form', 'click');
+</script>
+<!-- End Google Analytics -->
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +35,8 @@
 
 
     <title>Mood</title>
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
 </head>
 
 <body>
@@ -46,17 +62,17 @@
 
     {{#if entryAlt}}
      <section>
-        <form target="_self" action="sendEntry" method="POST">
+        <form target="_self" action="sendEntry" method="POST" onclick="analytics()">
             <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
-            <input class="checkin" onclick="window.location.href ='home';" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
+            <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
         </form>
     </section>       
     {{else}}
       <section>
-        <form target="_self" action="sendEntry" method="POST">
+        <form target="_self" action="sendEntry" method="POST" onclick="analytics()">
             <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
-            <input type="text" name="tags" placeholder="Enter related tags here.">
-            <input class="checkin" onclick="window.location.href ='home';" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
+            <input type="text" name="tags" onclick="analyticsC()" placeholder="Enter related tags here.">
+            <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
         </form>
     </section>             
     {{/if}}
