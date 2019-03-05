@@ -22,13 +22,13 @@ exports.overview = function(req, res){
 }
 
 exports.entry = function(req, res){
-  data["entryAlt"]=false;
-  res.render('entry');
+  data['entryAlt']=false;
+  res.render('entry', data);
 }
 
 exports.entryAlt = function(req,res){
-  data["entryAlt"]=true;
-  res.render('entry');
+  data['entryAlt']=true;
+  res.render('entry', data);
 }
 
 

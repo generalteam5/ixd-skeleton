@@ -77,20 +77,21 @@ ga('send', 'pageview');
 
 
     {{#if entryAlt}}
-      <section>
+    
+    <section>
         <form target="_self" action="sendEntry" method="POST">
             <textarea class='entry' name="entry" onclick="analytics()" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
             <input type="text" name="tags" onclick="analyticsC()" placeholder="Enter related tags here.">
             <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
         </form>
-    </section>    
-    {{else}}  
+    </section> 
+    {{else}}     
     <section>
         <form target="_self" action="sendEntry" method="POST" onclick="analytics()">
             <textarea class='entry' name="entry" rows="10" cols="30" placeholder="Here is your safe space."></textarea>
             <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
         </form>
-    </section>             
+    </section>              
     {{/if}}
 
 </body>
