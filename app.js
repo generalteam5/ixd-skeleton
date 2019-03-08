@@ -54,7 +54,7 @@ app.get('/overview', index.overview);
 //   res.render('chats');
 // });
 //for json rendering
-app.get('/chats', index.chats);
+// app.get('/chats', index.chats);
 
 app.get('/groups', function(req, res){
   res.render('groups');
@@ -116,6 +116,14 @@ app.post('/sendEntry', function(req, res){
 }});
 
 })
+
+app.get('/chats', function(req, res){
+  fs.readFile('./dataAlt.json', function(err, data){
+      if (err) throw err;
+      obj = JSON.parse(data);
+      res.render('chats', obj);
+  });
+});
 
 
 http.createServer(app).listen(app.get('port'), function(){

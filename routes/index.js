@@ -1,6 +1,6 @@
 var data = require('../data.json');
 var data2 = require('../chats.json');
-var data3 = require('../dataAlt.json');
+//var data3 = require('../dataAlt.json');
 //var data4 = require('../chats2.json');
 
 /*
@@ -14,9 +14,9 @@ exports.home = function(req, res){
   res.render('home', data);
 }
 
-exports.chats = function(req, res){
-  res.render('chats', data3);
-}
+// exports.chats = function(req, res){
+//   res.render('chats', data3);
+// }
 
 exports.overview = function(req, res){
   res.render('overview', data2);
