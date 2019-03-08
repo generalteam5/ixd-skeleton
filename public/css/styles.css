@@ -15,14 +15,14 @@ ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        overflow: hidden;       
         background-color: grey;
 }
 /*--idk what this is doing*/
 
 .navbar {
         width: 100%;
-        background-color: rgb(160, 160, 160);
+        background-color: cornflowerblue;
         overflow: auto;
         /*position: sticky; /*holds havbar in place*/
         /*top: 0; /*keeps it at the top*/
@@ -39,11 +39,11 @@ ul{
       }
       
 .navbar a:hover {
-        background-color:hotpink;
+        background-color: grey;
 }
       
 .active {
-        background-color: rgb(80, 180, 83);
+        background-color: #ed647d;
 }
 
 .title1 {

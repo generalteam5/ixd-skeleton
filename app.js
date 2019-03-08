@@ -86,7 +86,7 @@ app.get('/open', function(req, res){
 // });
 
 app.get('/entry', index.entry);
-app.get('/entryAlt', index.entryAlt);
+//app.get('/entryAlt', index.entryAlt);
 
 app.post('/SendfbData', function(req, res){
   console.log(req.body);
@@ -116,6 +116,7 @@ app.post('/sendEntry', function(req, res){
 }});
 
 })
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

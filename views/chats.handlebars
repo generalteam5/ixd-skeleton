@@ -45,22 +45,23 @@
     {{!-- {{#each entries}} --}}
     <div>
 		<table>
-            <tr class='clickable-row' data-href='open'>
+            {{!-- <tr class='clickable-row' data-href='open'> --}}
+            <tr>
                 {{!-- <td class="marginAbove"><p>Entry Topic: {{topic}}</p></td> --}}
                 {{!-- <td><p>Mood: {{mood}}</p></td> --}}
-                <td><p>{{entry}}</p></td>
+                <td>{{tags}}<br><br><p>{{entry}}</p></td>
             </tr>
         </table>
     </div>
 	{{!-- {{/each}} --}}
 
-    <script>
+    {{!-- <script>
         jQuery(document).ready(function($) {
         $(".clickable-row").click(function() {
         window.location = $(this).data("href");
     });
     });
-    </script>
+    </script> --}}
             
 </body>
 </html>
