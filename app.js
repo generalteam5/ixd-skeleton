@@ -107,11 +107,20 @@ app.post('/sendEntry', function(req, res){
     obj = JSON.parse(data); //now it an object
    // obj.table.push(req.body); //add some data
     json = JSON.stringify(obj); //convert it back to json
-    fs.writeFile('./dataAlt.json', JSON.stringify(req.body), function(err){
-      if(err){
-        return console.log(err);
-      }
-    }); // write it back 
+
+     fs.writeFile('./dataAlt.json', JSON.stringify(req.body), function(err){
+       if(err){
+         return console.log(err);
+       }
+     }); // write it back 
+
+    // fs.appendFile('./dataAlt.json',data, 'utf8',
+    // // callback function
+    // function(err) { 
+    //     if (err) throw err;
+    //     // if no error
+    //     console.log("Data is appended to file successfully.")
+    // });
     res.redirect('home');
 }});
 
