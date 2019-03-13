@@ -7,12 +7,16 @@
 body{
     background-color: #eee4cf;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 h2{
     padding: 120px 0 170px 0;
     text-align: center;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .slidecontainer {
