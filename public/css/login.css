@@ -17,7 +17,7 @@ img {
 
 
 .logo {
-    padding: 120px 0 170px 0;
+    padding: 100px 0 100px 0;
     height: 35%;
     width: 35%
 }
@@ -52,7 +52,7 @@ input[type=text], input[type=password] {
   width: 70%;
   height: 20px;
   padding: 20px 20px;
-  margin: 20px 0 0 15%;
+  margin: 0 0 30px 15%;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -83,3 +83,7 @@ h2{
     box-sizing: border-box;
     border-radius:15px;
   }
+
+p{
+    margin: 0 0 .5em 15%;
+}
