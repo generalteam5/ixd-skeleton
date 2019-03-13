@@ -23,21 +23,24 @@ ul{
 .navbar {
         width: 100%;
         background-color: cornflowerblue;
-        overflow: auto;
+        overflow: hidden;
         position: fixed;
         bottom: 0;
+        margin-bottom: 0;
         /*position: sticky; /*holds havbar in place*/
         /*top: 0; /*keeps it at the top*/
 }
 
 .navbar a {
         float: left;
-        width: 33%;
+        display: block;
+        width: 33.33333333%;
         text-align: center;
         padding: 0 20px 0 23px;
         transition: all 0.3s ease;
         color: white;
         font-size: 36px;
+        text-decoration: none;
       }
       
 .navbar a:hover {
