@@ -91,3 +91,13 @@ h2{
 p{
     margin: 0 0 .5em 15%;
 }
+
+.plus{
+    float:right;
+}
+
+.entrybox{
+    float:left;
+    padding: 0 40px 0 0;
+}
+

@@ -63,7 +63,7 @@ ul{
 
 .title1 {
         text-align: center;
-        padding: 0 0 40px;
+        padding: 0 0 5px;
 }
 
 .title2 {
@@ -115,4 +115,8 @@ b{
 
 .middle {
         text-align: center;
+}
+
+.img1 {
+        padding: 0 0 15px 0;
 }
