@@ -84,12 +84,14 @@ ga('send', 'pageview');
         <form target="_self" action="sendEntry" method="POST">
             {{!-- <textarea class='entry' name="entry" onclick="analytics()" rows="10" cols="30" placeholder="Here is your safe space."></textarea> --}}
             <input class="entrybox" type="text" name="tags" onclick="analyticsC()" placeholder="Add Entries...">
-            <form target="_self" action="sendEntry2" method="POST">
+            <form target="_self" action="sendEntry" method="POST">
             <input class="plus" type="image" value="Submit" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/+_button.png">
             </form>
-            <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png">
+            {{!-- <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png"> --}}
         </form>
     </section> 
+
+    <a href="home"><img style="padding: 10px 0 10px 0" src="../images/A6 Assets/check in.png"></a>
 
     <img src="../images/A10 Assets/or_text.png" style="padding: 30px 0 30px 0">
 

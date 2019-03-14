@@ -121,7 +121,7 @@ app.post('/sendEntry', function(req, res){
     //     // if no error
     //     console.log("Data is appended to file successfully.")
     // });
-    res.redirect('home');
+    res.redirect('entry');
 }});
 
 })
