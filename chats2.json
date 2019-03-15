@@ -1,29 +1,29 @@
 {
 	"friends": [
 		{
-			"entry": "Wahhhhhh, my roommate won't let me use his computerrr, wahhhhhhhhhhhhhhhhhhhhhhhhhh",
+			"entry": "Today was alright, got to see a cute doggy on my way to class. Sooo~ cute.",
             "img": "../images/angry_boi_face.png",
-            "tags2": "#WAH",
+            "tags2": "#ehh #doggy",
             "date": "2019/03/13"
 
 		},
 		{
-			"entry": "Please type something here,  oh noeessss, I types something hereeee",
+			"entry": "Got cut in line while waiting to get on the bus. But at least someone moved their stuff to let me have a seat.",
             "img": "../images/missing_face_2.png",
-            "tags2": "#OH",
+            "tags2": "#ugh #WTH #why",
             "date": "2019/03/10"
 		},
 		
 		{
-            "entry": "Ahhhhhhhhhhhh om my gahhhhh, whattt the ajsdfjsafas jdf;jasd;fasd",
+            "entry": "My housemate keeps leaving her dirty clothes all over the house. I can’t believe she even yelled at me for leaving my dishes in the sink for half a day.",
             "img": "../images/green_face.png",
-            "tags2": "#what",
+            "tags2": "#DirtyAF #Beech",
             "date": "2019/03/3"
         },
         {
-            "entry": "Ahhhhhhhhhhhh om my gahhhhh, whattt the ajsdfjsafas jdf;jasd;fasd",
+            "entry": "Why can't anthing work out for me? Got coffee spilled onto my blouse and was late for my interview",
             "img": "../images/sad_face.png",
-            "tags2": "#what",
+            "tags2": "#sad #nooo #fail",
             "date": "2019/02/25"
         }
     ]
