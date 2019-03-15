@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/chats.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:60" rel="stylesheet">
 
 
 
@@ -49,11 +49,14 @@
     <div>
 		<table>
             {{!-- <tr class='clickable-row' data-href='open'> --}}
-            <tr>
+            <tr style="padding-bottom: 0">
+                <div>
                 {{!-- <td class="marginAbove"><p>Entry Topic: {{topic}}</p></td> --}}
                 {{!-- <td><p>Mood: {{mood}}</p></td> --}}
-                <td>{{tags}}<br><br><p>{{entry}}</p></td>
+                <td><img src="../images/Green_face.png" style="padding-bottom: 10px">{{tags}}<br><br><p>{{entry}}</p></td>
+                </div>
             </tr>
+
         </table>
     </div>
 	{{!-- {{/each}} --}}

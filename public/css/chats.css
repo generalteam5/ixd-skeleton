@@ -21,3 +21,8 @@ tr {
 /* tr:hover {
     background-color:lightblue;
 } */
+
+.marginRight {
+    padding-right: 90px;
+    padding-left: 40px;
+}
