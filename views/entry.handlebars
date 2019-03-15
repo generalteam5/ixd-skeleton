@@ -47,7 +47,7 @@ ga('send', 'pageview');
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/login.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 
 
 
@@ -55,12 +55,19 @@ ga('send', 'pageview');
     <title>Mood</title>
     {{> facebook}}
     <script src="/js/facebook.js"></script>
+
+    <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }
+    </script>
 </head>
 
 <body>
 
     <header>
-        <h2>How Do You Feel?</h2>
+        <h2>How do you feel?</h2>
     </header>
 
     <!-- Test block for if statement-->
@@ -80,18 +87,24 @@ ga('send', 'pageview');
 
     {{!-- {{#if entryAlt}}
      --}}
-    <section>
+
+     <div>
         <form target="_self" action="sendEntry" method="POST">
             {{!-- <textarea class='entry' name="entry" onclick="analytics()" rows="10" cols="30" placeholder="Here is your safe space."></textarea> --}}
-            <input class="entrybox" type="text" name="tags" onclick="analyticsC()" placeholder="Add Entries...">
+            <div>
+            <input class="entrybox" type="text" name="tags" onclick="analyticsC()" placeholder="Add Entry and Tags" style="width: 60%" id="user_input">
             <form target="_self" action="sendEntry" method="POST">
-            <input class="plus" type="image" value="Submit" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/+_button.png">
+            <input class="plus" type="image" value="Submit" src="../images/+_button_updated.png" onclick="showInput();">
+            </div>
             </form>
             {{!-- <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png"> --}}
         </form>
-    </section> 
 
-    <a href="home"><img style="padding: 10px 0 10px 0" src="../images/A6 Assets/check in.png"></a>
+    <p class="journal"><span id='display'></span></p>
+    </div>
+
+    <div class="letsgo">
+    <a href="home"><img style="padding: 20px 0 0 0" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/Continue_Nav_Bar.png"></a>
 
     <img src="../images/A10 Assets/or_text.png" style="padding: 30px 0 30px 0">
 
@@ -99,6 +112,7 @@ ga('send', 'pageview');
     <section id="center">
             <a href="home"><img class="skip" src="../images/A10 Assets/Group 2.png"></a>
     </section>
+    </div>
     {{!-- {{else}}     
     <section>
         <form target="_self" action="sendEntry" method="POST" onclick="analytics()">
