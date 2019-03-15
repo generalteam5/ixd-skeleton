@@ -80,7 +80,7 @@ h2{
 }
 
 .checkin{
-    padding: 70px 0 20px 0;
+    padding: 20px 0 20px 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -118,4 +118,8 @@ h2{
 .angryboi{
     float: right;
     padding-bottom: 5px;
+}
+
+.faces img:active{
+    background-color: tan;
 }
