@@ -62,6 +62,7 @@ ga('send', 'pageview');
                     document.getElementById("user_input").value;
     }
     </script>
+
 </head>
 
 <body>
@@ -90,21 +91,20 @@ ga('send', 'pageview');
 
      <div>
         <form target="_self" action="sendEntry" method="POST">
-            {{!-- <textarea class='entry' name="entry" onclick="analytics()" rows="10" cols="30" placeholder="Here is your safe space."></textarea> --}}
+            <textarea class='entry' name="entry" onclick="analytics()" rows="3" cols="30" placeholder="Here is your safe space."></textarea>
             <div>
-            <input class="entrybox" type="text" name="tags" onclick="analyticsC()" placeholder="Add Entry and Tags" style="width: 60%" id="user_input">
-            <form target="_self" action="sendEntry" method="POST">
-            <input class="plus" type="image" value="Submit" src="../images/+_button_updated.png" onclick="showInput();">
+            <input class="entrybox" type="text" name="tags" onclick="analyticsC()" placeholder="Add Entry and Tags" style="width: 70%" id="user_input">
+            {{!-- <input class="plus" type="image" value="Submit" src="../images/+_button_updated.png"> --}}
             </div>
-            </form>
-            {{!-- <input class="checkin" onclick="analyticsB()" type="image" value= "Submit" src="../images/A6 Assets/check in.png"> --}}
+            {{!-- <input type="time" name="timestamp" step="1"> --}}
+            <input class="checkin" onclick="time()" type="image" value= "Submit" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/Continue_Nav_Bar.png">
         </form>
 
     <p class="journal"><span id='display'></span></p>
     </div>
 
     <div class="letsgo">
-    <a href="home"><img style="padding: 20px 0 0 0" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/Continue_Nav_Bar.png"></a>
+    {{!-- <a href="home"><img style="padding: 20px 0 0 0" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/Continue_Nav_Bar.png"></a> --}}
 
     <img src="../images/A10 Assets/or_text.png" style="padding: 30px 0 30px 0">
 
@@ -121,6 +121,7 @@ ga('send', 'pageview');
         </form>
     </section>              
     {{/if}} --}}
+
 
 </body>
 </html>

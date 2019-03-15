@@ -44,8 +44,9 @@
     </header>  
     <!-- End of Header-->
 
-    <h2 style="text-align: center">Journal</h2>
+    <h2 class="moveLeft" style="text-align: center">Journal<a href="entry"><img style="padding-left:70px" src="../images/+_button_updated.png"></a></h2>
     {{!-- {{#each entries}} --}}
+
     <div>
 		<table>
             {{!-- <tr class='clickable-row' data-href='open'> --}}
@@ -53,7 +54,7 @@
                 <div>
                 {{!-- <td class="marginAbove"><p>Entry Topic: {{topic}}</p></td> --}}
                 {{!-- <td><p>Mood: {{mood}}</p></td> --}}
-                <td><img src="../images/Green_face.png" style="padding-bottom: 10px">{{tags}}<br><br><p>{{entry}}</p></td>
+                <td><img src="../images/Neutral_face.png" style="padding-bottom: 10px">{{obj2.tags}} &nbsp;&nbsp;&nbsp; {{obj2.date}}<br><br><p>{{obj2.entry}}</p></td>
                 </div>
             </tr>
 
@@ -68,6 +69,21 @@
     });
     });
     </script> --}}
+
+   <div>
+       {{#each obj1.friends}}
+		<table>
+            {{!-- <tr class='clickable-row' data-href='open'> --}}
+            <tr style="padding-bottom: 0">
+                <div>
+                {{!-- <td class="marginAbove"><p>Entry Topic: {{topic}}</p></td> --}}
+                {{!-- <td><p>Mood: {{mood}}</p></td> --}}
+                <td><img src={{img}} style="padding-bottom: 10px">{{tags2}} &nbsp;&nbsp;&nbsp; {{date}}<br><br><p>{{entry}}</p></td>
+                </div>
+            </tr>
+        </table>
+        {{/each}}    
+    </div>
             
 </body>
 </html>

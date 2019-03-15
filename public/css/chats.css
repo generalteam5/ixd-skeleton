@@ -26,3 +26,8 @@ tr {
     padding-right: 90px;
     padding-left: 40px;
 }
+
+.moveLeft {
+    padding-left: 120px;
+
+}

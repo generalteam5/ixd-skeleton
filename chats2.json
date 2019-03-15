@@ -1,3 +1,30 @@
 {
-    "tags":""
+	"friends": [
+		{
+			"entry": "Wahhhhhh, my roommate won't let me use his computerrr, wahhhhhhhhhhhhhhhhhhhhhhhhhh",
+            "img": "../images/angry_boi_face.png",
+            "tags2": "#WAH",
+            "date": "2019/03/13"
+
+		},
+		{
+			"entry": "Please type something here,  oh noeessss, I types something hereeee",
+            "img": "../images/missing_face_2.png",
+            "tags2": "#OH",
+            "date": "2019/03/10"
+		},
+		
+		{
+            "entry": "Ahhhhhhhhhhhh om my gahhhhh, whattt the ajsdfjsafas jdf;jasd;fasd",
+            "img": "../images/green_face.png",
+            "tags2": "#what",
+            "date": "2019/03/3"
+        },
+        {
+            "entry": "Ahhhhhhhhhhhh om my gahhhhh, whattt the ajsdfjsafas jdf;jasd;fasd",
+            "img": "../images/sad_face.png",
+            "tags2": "#what",
+            "date": "2019/02/25"
+        }
+    ]
 }
