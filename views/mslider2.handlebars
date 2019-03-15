@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    {{!-- <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134953827-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134953827-1');
+    </script> --}}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/mslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+
+
+
+
+    <title>Mood</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>How do you feel?</h2>
+    </header>
+
+    {{!-- <div class="slidecontainer">
+        <input type="range" min="1" max="1000" value="492" class="slider" id="myRange">
+    <!--Range acting weird with button in different sized screens-->
+    <!--Check Pixels of asset slider-->
+    <!--works well enough for Pixel2 XL-->
+    </div>
+    
+    <!--Have Winson make these a single asset-->
+    <div class="facecontainer">
+        <img class="faces" src="../images/A6 Assets/faces_group.png">
+    </div>
+    <!--Have Winson make these a single asset--> --}}
+
+    {{!-- TODO: Add assets for individual faces. And need continue/next button --}}
+    <section class="faces">
+    <img class="bigboi" src="../images/sad_face.png" style="padding-top: 1%">
+
+    <div class='smallboi'>
+    <img class="angryboi" src="../images/angry_boi_face.png">
+    <img src="../images/missing_face_1.png">
+    </div>
+
+    <img class="bigboi" src="../images/Neutral_face.png" style="padding: 8% 5px 0 5px">
+
+    <div class='smallboi' style="padding-top: 5px">
+    <img style="padding: 5px" src="../images/face_3.png">
+    <img src="../images/missing_face_2.png">
+    </div>
+
+    <img class="bigboi" src="../images/Green_face.png" style="padding-top: 3%">
+    </section>
+
+    {{!-- TODO: Fix CSS for buttons and or text --}}
+    <section style="padding-top: 190px">
+    <a href="entry2"><img class="checkin" src="../images/New_Mood_Assets_A10-20190314T100549Z-001/New_Mood_Assets_A10/Continue_Nav_Bar.png"></a>
+    <img class="or" src="../images/A10 Assets/or_text.png">
+    <a href="chats"><img class="skip" src="../images/A10 Assets/Group 2.png"></a>
+    </section>
+            
+</body>
+</html>

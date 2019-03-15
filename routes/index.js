@@ -36,6 +36,10 @@ exports.entry = function(req,res) {
   res.render('entry');
 }
 
+exports.entry = function(req,res) {
+  res.render('entry2');
+}
+
 
 //route to profile page with data required
 // exports.profiles = function(req, res){

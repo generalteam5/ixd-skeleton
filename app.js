@@ -71,11 +71,18 @@ app.get('/profiles', function(req, res){
 });
 
 app.get('/home', index.home);
+
 // app.get('/homeAlt', index.homeAlt);
 
 app.get('/mslider', function(req, res){
   res.render('mslider');
 });
+
+app.get('/mslider2', function(req, res){
+  res.render('mslider2');
+});
+
+
 
 app.get('/open', function(req, res){
   res.render('openEntries');
@@ -128,6 +135,36 @@ app.post('/sendEntry', function(req, res){
 
 })
 
+app.post('/sendEntry2', function(req, res){
+  var eh;
+  var start = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+  console.log(req.body);
+  fs.readFile('./dataAlt.json', 'utf8', function readFileCallback(err, data){
+    if (err){
+        console.log(err);
+    } else {
+    eh = JSON.parse(data); //now it an object
+    //obj.table.push(req.body); //add some data
+    json = JSON.stringify(eh); //convert it back to json
+      req.body.date=start;
+      fs.writeFile('./dataAlt.json', JSON.stringify(req.body), function(err){
+        if(err){
+          return console.log(err);
+        }
+      }); // write it back 
+
+    // fs.appendFile('./dataAlt.json',data, 'utf8',
+    // // callback function
+    // function(err) { 
+    //     if (err) throw err;
+    //     // if no error
+    //     console.log("Data is appended to file successfully.")
+    // });
+    res.redirect('chats');
+}});
+
+})
+
 app.get('/chats', function(req, res){
   fs.readFile('./chats2.json', function(err, data){
     if (err) throw err;
@@ -145,6 +182,14 @@ app.get('/entry', function(req, res){
       if (err) throw err;
       obj = JSON.parse(data);
       res.render('entry', obj);
+  });
+});
+
+app.get('/entry2', function(req, res){
+  fs.readFile('./dataAlt.json', function(err, data){
+      if (err) throw err;
+      obj = JSON.parse(data);
+      res.render('entry2', obj);
   });
 });
 
